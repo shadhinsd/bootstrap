@@ -30,6 +30,9 @@ html, body{
     color: var(--color-white);
     font-size: var(--size-md);
 }
+.navbar .navbar-nav .nav-item .nav-link.active{
+    color: rgb(53, 14, 182);
+}
 /*Navbar end................................... */
 
 /*slider start................................... */
@@ -118,3 +121,138 @@ html, body{
 }
 
 /*pagination end................................... */
+
+/*testimonial start................................... */
+.testimonial-area .card-item{
+     border: 1px solid var(--priamry-color);
+     padding: 30px 20px;
+     margin-left: 15px;
+     margin-right: 15px;
+}
+.testimonial-area .card-item .photo img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid var(--priamry-color);
+}
+.testimonial-area .card-text p{
+    text-align: justify;
+}
+.testimonial-area .card-text p i{
+    font-size: 40px;
+    color: lightgray;
+}
+.testimonial-area .card-item h3{
+    color: var(--priamry-color);
+}
+.slick-next::before{
+    color: var(--priamry-color);
+
+}
+.slick-prev::before{
+   color: var(--priamry-color);
+}
+/*testimonial end................................... */
+
+
+/*signin start................................... */
+.signin-form{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/nature.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.signin-form .form-body{
+    width: 35%;
+    border: 1px solid lightgrey;
+    padding: 30px 20px;
+    background-color: var(--color-white);
+}
+.signin-form .form-body a{
+    text-decoration: none;
+    color: rgba(78, 78, 99, 0.678);
+}
+.signin-form .form-body button{
+    width: 100%;
+    background-color: var(--priamry-color);
+    border: none;
+    padding: 5px;
+    color: var(--color-white);
+}
+.signin-form .form-body button:hover{
+    background-color: var(--secondary-color);
+}
+/*signin end................................... */
+
+ .contact-area{
+   background-image: url('../images/nature.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ .contact-area .contact-from{
+   background-color: var(--priamry-color);
+ }
+
+
+/*signup start................................... */
+.signup-form{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/15-beautiful-places-in-India-for-tourists-to-visit.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.signup-form .form-body{
+    width: 35%;
+    border: 1px solid lightgrey;
+    padding: 30px 20px;
+    background-color: var(--color-white);
+}
+.signup-form .form-body a{
+    text-decoration: none;
+    color: rgba(78, 78, 99, 0.678);
+}
+.signup-form .form-body button{
+    width: 100%;
+    background-color: var(--priamry-color);
+    border: none;
+    padding: 5px;
+    color: var(--color-white);
+}
+.signup-form .form-body button:hover{
+    background-color: var(--secondary-color);
+}
+/*signup end................................... */
+
+
+/*footer start................................... */
+.main-footer{
+    background-color: var(--priamry-color);
+}
+.main-footer h3{
+    color: rgb(233, 225, 225);
+    padding-bottom: 12px;
+}
+.main-footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main-footer ul li{
+    color: rgb(82, 67, 67);
+    line-height: 30px;
+}
+.main-footer ul li a{
+    text-decoration: none;
+    color: rgb(82, 67, 67);
+}
+.main-footer ul li a:hover{
+     padding-left: 7px;
+     transition: 0.5s; 
+    }
+
+/*footer end................................... */

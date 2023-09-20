@@ -6,12 +6,14 @@
     <title>MY FIRST BOOTSTRAP</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <!-- navbar start  -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
     <div class="container">
       <a class="navbar-brand text-uppercase text-white fw-bold" href="#">logo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,15 +31,26 @@
             <a class="nav-link" href="#">Blogs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+         
+          <button type="button" class="btn position-relative"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="bi bi-bag"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              9+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+
+
             <li class="nav-item">
-              <a class="nav-link active sing" aria-current="page" href="#"><span><i class="bi bi-box-arrow-in-right"></i></span>SignIn</a>
+              <a class="nav-link  sing" aria-current="page" href="SignIn.html"><span><i class="bi bi-box-arrow-in-right"></i></span>SignIn</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link sing" href="#"><span><i class="bi bi-box-arrow-in-left"></i></span>SignUp</a>
+              <a class="nav-link sing" href="Signup.html"><span><i class="bi bi-box-arrow-in-left"></i></span>SignUp</a>
             </li>
           </ul>
       </div>
@@ -303,9 +316,231 @@
     </div>
 <!-- pagination end  -->
 
+<!-- testimonial start  -->
+<div class="testimonial-area pt-5 pb-5">
+  <div class="container">
+    <h2 class="text-center fw-bold pb-4">Testimonial</h2>
+    <div class="row responsive">
+      <div class="col-md-6">
+        <div class="card-item">
+          <div class="d-flex gap-4 border-bottom pb-3">
+            <div class="photo">
+              <img src="assets/images/testimonial/man5.jpg" alt="">
+            </div>
+            <div>
+              <h3>John Doe</h3>
+              <span>Designation</span>
+            </div>
+          </div>
+          <div class="card-text">
+            <p>
+              <span><i class="bi bi-quote"></i></span>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia ducimus enim accusantium sed expedita laborum culpa aut quis quos? Repudiandae voluptatibus, doloribus ut odio unde dolores assumenda magnam ratione itaque quia iure quibusdam labore aliquam quasi, autem odit velit earum molestiae aperiam? Eos, molestiae. Aut sed perspiciatis enim reiciendis nemo!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-item">
+          <div class="d-flex gap-4 border-bottom pb-3">
+            <div class="photo">
+              <img src="assets/images/testimonial/man4.jpg" alt="">
+            </div>
+            <div>
+              <h3>Henry kalrk</h3>
+              <span>Designation</span>
+            </div>
+          </div>
+          <div class="card-text">
+            <p>
+              <span><i class="bi bi-quote"></i></span>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia ducimus enim accusantium sed expedita laborum culpa aut quis quos? Repudiandae voluptatibus, doloribus ut odio unde dolores assumenda magnam ratione itaque quia iure quibusdam labore aliquam quasi, autem odit velit earum molestiae aperiam? Eos, molestiae. Aut sed perspiciatis enim reiciendis nemo!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-item">
+          <div class="d-flex gap-4 border-bottom pb-3">
+            <div class="photo">
+              <img src="assets/images/testimonial/man2.jpg" alt="">
+            </div>
+            <div>
+              <h3>Robbert Jack</h3>
+              <span>Designation</span>
+            </div>
+          </div>
+          <div class="card-text">
+            <p>
+              <span><i class="bi bi-quote"></i></span>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia ducimus enim accusantium sed expedita laborum culpa aut quis quos? Repudiandae voluptatibus, doloribus ut odio unde dolores assumenda magnam ratione itaque quia iure quibusdam labore aliquam quasi, autem odit velit earum molestiae aperiam? Eos, molestiae. Aut sed perspiciatis enim reiciendis nemo!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-item">
+          <div class="d-flex gap-4 border-bottom pb-3">
+            <div class="photo">
+              <img src="assets/images/testimonial/man3.jpg" alt="">
+            </div>
+            <div>
+              <h3>Alison Mendred</h3>
+              <span>Designation</span>
+            </div>
+          </div>
+          <div class="card-text">
+            <p>
+              <span><i class="bi bi-quote"></i></span>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia ducimus enim accusantium sed expedita laborum culpa aut quis quos? Repudiandae voluptatibus, doloribus ut odio unde dolores assumenda magnam ratione itaque quia iure quibusdam labore aliquam quasi, autem odit velit earum molestiae aperiam? Eos, molestiae. Aut sed perspiciatis enim reiciendis nemo!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- testimonial end  --> 
+
+<!-- offcunvas start  --> 
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Product Card</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+        <div class="gap-4 d-flex mb-3">
+            <div class="pd-img">
+                 <img src="assets/images/product/banana.png" class="img-fluid border" width="100" height="100" alt="">
+            </div>
+            <div>
+              <div class="name">
+                <a href="#">Fresh Banana</a>
+            </div>
+            <div class="price">
+                <p>50tk per Hali</p>
+            </div>
+            </div>
+            <div>
+                <button type="button" style="border: none; background-color: transparent;"><i class="bi bi-x-circle-fill"></i></button>
+            </div>
+        </div>
+
+        <div class="gap-4 d-flex mb-3">
+          <div class="pd-img">
+               <img src="assets/images/product/orange.png" class="img-fluid border" width="100" height="100" alt="">
+          </div>
+          <div>
+            <div class="name">
+              <a href="#">Fresh orange</a>
+          </div>
+          <div class="price">
+              <p>180tk per kg</p>
+          </div>
+          </div>
+          <div>
+              <button type="button" style="border: none; background-color: transparent;"><i class="bi bi-x-circle-fill"></i></button>
+          </div>
+      </div>
+
+      <div class="gap-4 d-flex mb-3">
+        <div class="pd-img">
+             <img src="assets/images/product/carrot.png" class="img-fluid border" width="100" height="100" alt="">
+        </div>
+        <div>
+          <div class="name">
+            <a href="#">Fresh carrot</a>
+        </div>
+        <div class="price">
+            <p>100tk per kg</p>
+        </div>
+        </div>
+        <div>
+            <button type="button" style="border: none; background-color: transparent;"><i class="bi bi-x-circle-fill"></i></button>
+        </div>
+    </div>
+
+    <div class="gap-4 d-flex mb-3">
+      <div class="pd-img">
+           <img src="assets/images/product/cauliflower.png" class="img-fluid border" width="100" height="100" alt="">
+      </div>
+      <div>
+        <div class="name">
+          <a href="#">Fresh Cauliflower</a>
+      </div>
+      <div class="price">
+          <p>100 tk per kg</p>
+      </div>
+      </div>
+      <div>
+          <button type="button" style="border: none; background-color: transparent;"><i class="bi bi-x-circle-fill"></i></button>
+      </div>
+  </div>
+
+      <div>
+           <a type="button" class="btn btn-info" href="#">View Cart</a>
+           <a type="button" class="btn btn-success" href="#">Continue Shopping</a>
+      </div>
+  </div>
+</div>
+<!-- offcunvas end  --> 
+
+
+ <!-- footer start  -->    
+     <footer class="main-footer pt-5 pb-5">
+           <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                   <h3>Address</h3>
+                   <ul>
+                       <li><i class="bi bi-house"></i> Dhaka, Bangladesh</li>
+                       <li><i class="bi bi-telephone-inbound-fill"></i>+99 00885688349</li>
+                   </ul>
+              </div>
+
+              <div class="col-md-3">
+               <h3>Browse Link</h3>
+               <ul>
+                   <li><a href="#">About us</a></li>
+                   <li><a href="#">Contact us</a></li>
+                   <li><a href="#">Homepage</a></li>
+                   <li><a href="#">Telephone</a></li>
+                   <li><a href="#">Food-section</a></li>
+               </ul>
+          </div>
+
+          <div class="col-md-3">
+           <h3>Browse Link</h3>
+           <ul>
+             <li><a href="#">About us</a></li>
+             <li><a href="#">Contact us</a></li>
+             <li><a href="#">Homepage</a></li>
+             <li><a href="#">Telephone</a></li>
+             <li><a href="#">Food-section</a></li>
+         </ul>
+      </div>
+
+      <div class="col-md-3">
+       <h3>Browse Link</h3>
+       <ul>
+         <li><a href="#">About us</a></li>
+         <li><a href="#">Contact us</a></li>
+         <li><a href="#">Homepage</a></li>
+         <li><a href="#">Telephone</a></li>
+         <li><a href="#">Food-section</a></li>
+     </ul>
+  </div>
+          </div>
+         
+          <div class="ex-footer text-center pt-4 mt-3 text-white border-top">
+               <p>Copyright &copy; All rights reserved by <a href="#">SD Shadhin</a></p>
+          </div>
+           </div>
+     </footer> 
+  <!-- footer end  -->    
 
    
     <script src="assets/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/slick/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

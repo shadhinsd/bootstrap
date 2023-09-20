@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+       <!-- navbar start  -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-white fw-bold" href="#">logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link sing" aria-current="page" href="SignIn.html"><span><i class="bi bi-box-arrow-in-right"></i></span>SignIn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active sing" href="#"><span><i class="bi bi-box-arrow-in-left"></i></span>SignUp</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav>    
+
+  <!-- navbar end  -->
+
+
+
+      <div class="signup-form d-flex justify-content-center align-items-center">
+          <div class="form-body">
+            <h4 class="text-center text-uppercase pb-3">SignUp Panel</h4>
+            <form class="row g-3 needs-validation" novalidate>
+             <div class="col-md-12">
+               <label for="Email" class="form-label">Enter Email or Phone</label>
+               <input type="mail" class="form-control" id="mail" placeholder="Please Enter Your Mail" required>
+               <div class="valid-feedback">
+                 Looks good!
+               </div>
+             </div>
+             <div class="col-md-12">
+               <label for="validationCustom02" class="form-label">Create a New Password</label>
+               <input type="password" class="form-control" id="password" placeholder="Enter Strong Password" required>
+               <div class="valid-feedback">
+                 Looks good!
+               </div>
+             </div>
+
+             <div class="col-md-12">
+                <label for="validationCustom02" class="form-label">Confirm New Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Confirm Strong Password" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+
+      
+             <div class="col-12 mt-4">
+               <button class="btn" type="submit">Create Account</button>
+             </div>
+           </form>
+          </div>
+      </div>
+
+
+ 
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script> 
+    <script>
+(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+</body>
+</html>
