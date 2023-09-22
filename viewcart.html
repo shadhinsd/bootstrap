@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY FIRST BOOTSTRAP</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- navbar start  -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-white fw-bold" href="#" data-aos="zoom-in-up">logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dataTables.html">DataTable</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+         
+          <button type="button" class="btn position-relative"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="bi bi-bag"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              9+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+
+
+            <li class="nav-item">
+              <a class="nav-link  sing" aria-current="page" href="SignIn.html"><span><i class="bi bi-box-arrow-in-right"></i></span>SignIn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link sing" href="Signup.html"><span><i class="bi bi-box-arrow-in-left"></i></span>SignUp</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav>    
+
+  <!-- navbar end  -->
+
+  <!-- breadcrumb start  -->
+ <div class="breadcrumb-section">
+    <div class="overlay"></div>
+      <div class="breadcrumb-text justify-content-center align-items-center d-flex h-100 w-100 position-absolute">
+         <div class="text-center">
+             <div class="page-title">
+                  <h3 class="fw-bold">Cart</h3>
+             </div>
+             <div class="mt-10">
+                 <a href="index.html">Home</a>
+                 <span>>cart</span>
+             </div>
+         </div>
+      </div>
+ </div>
+<!-- breadcrumb end  -->
+
+<div class="lightgrey pb-2">
+     <!-- table start  -->
+<div class="table-start">
+    <div class="container table-product">
+        <div class="table-responsive text-center">
+          <table class="table table-bordered border-success">
+              <thead>
+                <tr>
+                  <th class="headline" scope="col">IMAGE</th>
+                  <th class="headline" scope="col">PRODUCT NAME</th>
+                  <th class="headline" scope="col">UNTIL PRICE</th>
+                  <th class="headline" scope="col">SUBTOTAL</th>
+                  <th class="headline" scope="col">ACTION</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td  class="content-line"><a href="#"><img src="assets/images/product/banana.png" width="50" height="60" alt=""></a></td>
+                 <td  class="content-line">Fresh Banana</td>
+                  <td  class="content-line">100TK</td>
+                  <td  class="content-line">110TK</td>
+                  <td  class="content-line"><a href="#"><i class="bi bi-trash3-fill"></i></a></td>
+                </tr>
+                <tr>
+                  <td  class="content-line"><a href="#"><img src="assets/images/product/cauliflower.png" width="50" height="60" alt=""></a></td>
+                  <td  class="content-line">Fresh Cauliflower</td>
+                  <td  class="content-line">120TK</td>
+                  <td  class="content-line">140TK</td>
+                  <td  class="content-line"><a href="#"><i class="bi bi-trash3-fill"></i></a></td>
+                </tr>
+                <tr>
+                  <td  class="content-line"><a href="#"><img src="assets/images/product/orange.png" width="50" height="60" alt=""></a></td>
+                  <td class="content-line">Fresh Orange</td>
+                  <td class="content-line">180TK</td>
+                  <td class="content-line">190TK</td>
+                  <td class="content-line"><a href="#"><i class="bi bi-trash3-fill"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="content-line"><a href="#"><img src="assets/images/product/carrot.png" width="50" height="60" alt=""></a></td>
+                  <td class="content-line">Fresh Carrot</td>
+                  <td class="content-line">120TK</td>
+                  <td class="content-line">140TK</td>
+                  <td class="content-line"><a href="#"><i class="bi bi-trash3-fill"></i></a></td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+  </div>
+</div>
+<!-- table end  -->
+
+<!-- tablebutton start  -->
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <a href="#" class="my-btn">CONTINUE SOPPING</a>
+        </div>
+  
+        <div class="col-lg-6 col-md-6 col-sm-12 right">
+            <a href="#" class="my-btn">UPDATE CART</a>
+        </div>
+  </div>
+</div>
+<!-- tablebutton end  -->
+
+<!-- cuponcode-area start -->
+<div class="container">
+    <div class="row ">
+        <div class=" col-lg-6 col-md-6 col-sm-12 border border-black">
+             <div class="cuponcode-area p-3">
+                 <h5 class="fw-bold p-3"> Use Cupon Code</h5>
+
+                 <form class="row needs-validation border border-black" novalidate>
+                    <div class="col-md-12 border">
+                      <label for="validationCustom01" class="form-label">Have a Cupon Code?</label>
+                      <input type="text" class="form-control p-3" id="validationCustom01" placeholder="Enter Here..." required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn mt-3 mb-2" type="btn">Apply</button>
+                      </div>
+                    </form>
+
+             </div>
+        </div>
+
+        <div class="col-lg-5 col-md-5 col-sm-12 border side-content border border-black">
+            <div class="cuponcode-area p-3">
+                <h5 class="fw-bold">Order Total</h5>
+                <div class="border border-black">
+                    <div class="p-2 justify-content-between d-flex">
+                        <h6 class="fw-bold">Sub Total:</h6>
+                        <h6 class="fw-bold"> $201.00</h6>
+                    </div>
+                    <div class="p-2 justify-content-between d-flex">
+                        <h6 class="fw-bold">Taxes:</h6>
+                        <h6 class="fw-bold">$201.00</h6>
+                    </div>
+                </div>
+                <div class="border border-black p-3 justify-content-between d-flex">
+                    <h6 class="fw-bold">Grand Total:</h6>
+                    <h6 class="fw-bold">$201.00</h6>
+                </div>
+                   <div class="col-12 mt-3">
+                       <button class="btn btn-cuponcode" type="btn">Procced To Chekout</button>
+                     </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- cuponcode-area end -->
+</div>
+
+<!-- subcription-area start -->
+<div>
+     <div class="subcription-area">
+          <div class="container p-5">
+            <div class="row g-3">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                   <div class="pt-5 first justify-content-between d-flex">
+                    <div>
+                         <span><i class="bi bi-envelope-open"></i></span>
+                    </div>
+                      <div class="head">
+                        <h2>Newsletter</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, blanditiis.</p>
+                      </div>
+                   </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="row g-3">
+                        <div class="col-md-8 pt-2 d-flex justify-content-between">
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Enter your Email Address" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          <div class="col-md-3">
+                            <button class="btn p-2" type="button">Subscribe Now</button>
+                          </div>
+                    </div>
+                     
+                </div>
+            </div>
+          </div>
+     </div>
+</div>
+<!-- subcription-area end -->
+
+<!-- footer start -->
+<div class="footer">
+    <div class="container">
+            <div class="row pt-5 pb-5">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div>
+                        <h4 class="mb-4">Our Address</h4>
+                        <p><i class="bi bi-geo-alt"></i>Collins Street West Victoria 8007 Australia</p>
+                        <p><i class="bi bi-telephone-forward"></i>+61 3 123456842</p>
+                        <p><i class="bi bi-envelope"></i>example123@gmail.com</p>
+                    </div>
+                    <div>
+                   <a href="#"><i class="bi bi-facebook"></i></a>
+                   <a href="#"><i class="bi bi-twitter"></i></a>
+                   <a href="#"><i class="bi bi-instagram"></i></a>
+                   <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                     <div>
+                         <div>
+                            <h4 class="mb-4">Information</h4>
+                           <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Frequency Question</a></li>
+                           </ul>
+                         </div>
+                     </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div>
+                        <div>
+                           <h4 class="mb-4">My Account</h4>
+                          <ul>
+                           <li><a href="#">My Account</a></li>
+                           <li><a href="#">Login Page</a></li>
+                           <li><a href="#">Privacy</a></li>
+                           <li><a href="#">Sopping cart</a></li>
+                           <li><a href="#">Register Account</a></li>
+                           <li><a href="#">Logout</a></li>
+                          </ul>
+                        </div>
+                    </div>
+               </div>
+
+               <div class="col-lg-3 col-md-3 col-sm-12">
+                <div>
+                    <div>
+                       <h4 class="mb-4">Need Help?</h4>
+                      <ul>
+                       <li><a href="#">Help Center</a></li>
+                       <li><a href="#">Author Terms</a></li>
+                       <li><a href="#">Logo Market Terms</a></li>
+                       <li><a href="#">Sopping cart</a></li>
+                       <li><a href="#">LOgo License</a></li>
+                       <li><a href="#">Logout</a></li>
+                      </ul>
+                    </div>
+                </div>
+           </div>
+            </div>
+        </div>
+        <p class="last-footer p-3">Copyright &copy; All Right Reserved By <a href="#">SD Shadhin</a></p>
+</div>
+<!-- footer end -->
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
